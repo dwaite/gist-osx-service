@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>246</string>
+	<string>247</string>
 	<key>AMApplicationVersion</key>
 	<string>2.1</string>
 	<key>AMDocumentVersion</key>
@@ -75,7 +75,7 @@ def data(name, ext, content, private_gist)
 		'file_ext[gistfile1]'      =&gt; ext,
 		'file_name[gistfile1]'     =&gt; name,
 		'file_contents[gistfile1]' =&gt; content
-	}.merge(private_gist ? { 'private' =&gt; 'on' } : {}).merge(auth)
+	}.merge(private_gist ? { 'action_button' =&gt; 'private' } : {}).merge(auth)
 end
  
 def auth
@@ -204,7 +204,7 @@ location = write $stdin.read
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>359.000000:885.000000</string>
+				<string>351.500000:530.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -226,8 +226,8 @@ location = write $stdin.read
 				<real>0.0</real>
 				<key>subviewState</key>
 				<array>
-					<string>0.000000, 0.000000, 349.000000, 931.000000, NO</string>
-					<string>0.000000, 932.000000, 349.000000, 154.000000, NO</string>
+					<string>0.000000, 0.000000, 349.000000, 692.000000, NO</string>
+					<string>0.000000, 693.000000, 349.000000, -1.000000, NO</string>
 				</array>
 			</dict>
 			<key>actionsMinorSplitViewState</key>
@@ -236,8 +236,8 @@ location = write $stdin.read
 				<real>0.0</real>
 				<key>subviewState</key>
 				<array>
-					<string>0.000000, 0.000000, 150.000000, 931.000000, NO</string>
-					<string>151.000000, 0.000000, 198.000000, 931.000000, NO</string>
+					<string>0.000000, 0.000000, 150.000000, 692.000000, NO</string>
+					<string>151.000000, 0.000000, 198.000000, 692.000000, NO</string>
 				</array>
 			</dict>
 			<key>variablesMajorSplitViewState</key>
@@ -267,8 +267,8 @@ location = write $stdin.read
 			<real>349</real>
 			<key>subviewState</key>
 			<array>
-				<string>0.000000, 0.000000, 349.000000, 1131.000000, NO</string>
-				<string>350.000000, 0.000000, 718.000000, 1131.000000, NO</string>
+				<string>0.000000, 0.000000, 349.000000, 737.000000, NO</string>
+				<string>350.000000, 0.000000, 718.000000, 737.000000, NO</string>
 			</array>
 		</dict>
 		<key>minorSplitViewState</key>
@@ -277,14 +277,14 @@ location = write $stdin.read
 			<real>162</real>
 			<key>subviewState</key>
 			<array>
-				<string>0.000000, 0.000000, 718.000000, 940.000000, NO</string>
-				<string>0.000000, 950.000000, 718.000000, 162.000000, NO</string>
+				<string>0.000000, 0.000000, 718.000000, 546.000000, NO</string>
+				<string>0.000000, 556.000000, 718.000000, 162.000000, NO</string>
 			</array>
 		</dict>
 		<key>windowFrame</key>
-		<string>{{1216, 402}, {1067, 1153}}</string>
+		<string>{{31, 64}, {1067, 814}}</string>
 		<key>workflowViewScrollPosition</key>
-		<string>{{0, 0}, {718, 940}}</string>
+		<string>{{0, 0}, {703, 546}}</string>
 	</dict>
 	<key>workflowMetaData</key>
 	<dict>
