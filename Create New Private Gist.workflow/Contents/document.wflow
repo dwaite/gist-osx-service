@@ -81,10 +81,10 @@ end
 def auth
 	user  = `git config --global github.user`.strip
 	token = `git config --global github.token`.strip
-	user.empty? ? {} : { :login =&gt; user, :token =&gt; token }
+	user.to_s.empty? ? {} : { :login =&gt; user, :token =&gt; token }
 end
 
-location = write $stdin.read
+location = write $stdin.read, true
 `open #{location}`</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -204,7 +204,7 @@ location = write $stdin.read
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>351.500000:530.000000</string>
+				<string>351.500000:542.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -282,9 +282,9 @@ location = write $stdin.read
 			</array>
 		</dict>
 		<key>windowFrame</key>
-		<string>{{31, 64}, {1067, 814}}</string>
+		<string>{{187, 64}, {1067, 814}}</string>
 		<key>workflowViewScrollPosition</key>
-		<string>{{0, 0}, {703, 546}}</string>
+		<string>{{0, 51}, {703, 546}}</string>
 	</dict>
 	<key>workflowMetaData</key>
 	<dict>
